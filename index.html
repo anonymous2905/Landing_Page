@@ -1,228 +1,204 @@
 <!DOCTYPE HTML>
+<!--
+    Photon by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Parayush Swami - AI/ML Engineer</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-        /* Remove dynamic background animation */
-        #header .inner {
-            position: relative;
-            z-index: 1;
-        }
-        #header .inner .name-background {
-            display: none; /* Hide the background animation */
-        }
-        /* Custom styles for sections */
-        .main.style1 {
-            padding: 2em 0;
-        }
-        .main.style2 {
-            padding: 2em 0;
-            background-color: #f4f4f4;
-        }
-        .main.style3 {
-            padding: 2em 0;
-        }
-        .special {
-            background: #eee;
-        }
-        .icon {
-            font-size: 2em;
-            margin: 0.5em;
-        }
-        .actions .button {
-            margin: 0.5em;
-        }
-        .social-buttons {
-            margin-top: 1em;
-        }
-        .social-buttons a {
-            margin: 0.5em;
-            text-decoration: none;
-            color: #333;
-        }
-        .social-buttons i {
-            font-size: 1.5em;
-            vertical-align: middle;
-        }
-    </style>
-</head>
-<body class="is-preload">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Parayush Swami - AI/ML Engineer</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            #header .inner {
+                position: relative;
+                z-index: 1;
+            }
+            #header .inner .name-background {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background-size: cover;
+                animation: change-background 30s infinite;
+            }
+            @keyframes change-background {
+                0%, 100% { background: url('assets\css\images\andy-holmes-LUpDjlJv4_c-unsplash.jpg') no-repeat center center; }
+                20% { background: url('assets\css\images\greg-rakozy-oMpAz-DN-9I-unsplash.jpg') no-repeat center center; }
+                40% { background: url('assets\css\images\jeremy-thomas-4dpAqfTbvKA-unsplash.jpg') no-repeat center center; }
+                60% { background: url('assets\css\images\juskteez-vu-TIrXot28Znc-unsplash.jpg') no-repeat center center; }
+                80% { background: url('assets\css\images\nasa-rTZW4f02zY8-unsplash.jpg') no-repeat center center; }
+            }
+        </style>
+    </head>
+    <body class="is-preload">
 
-    <!-- Header -->
-    <section id="header">
-        <div class="inner">
-            <span class="icon solid major fa-cloud"></span>
-            <h1>Hi, I'm <strong>Parayush Swami</strong></h1>
-            <p>AI/ML Engineer at Tecosys and Fellow at Headstarter</p>
-            <ul class="actions special">
-                <li><a href="#one" class="button scrolly">Discover</a></li>
-            </ul>
-        </div>
-    </section>
+        <!-- Header -->
+        <section id="header">
+            <div class="inner">
+                <div class="name-background"></div>
+                <span class="icon solid major fa-cloud"></span>
+                <h1>Hi, I'm <strong>Parayush Swami</strong></h1>
+                <p>AI/ML Engineer at Tecosys and Fellow at Headstarter</p>
+                <ul class="actions special">
+                    <li><a href="#one" class="button scrolly">Discover</a></li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- About Me -->
-    <section id="one" class="main style1">
-        <div class="container">
-            <div class="row gtr-150">
-                <div class="col-6 col-12-medium">
-                    <header class="major">
-                        <h2>About Me</h2>
-                    </header>
-                    <p>Innovative and results-driven Computer Science student with expertise in Java, machine learning, and problem-solving. Eager to leverage technical skills and hands-on experience in a challenging role to drive technological advancements. Currently working as an AI/ML engineer at Tecosys.</p>
-                    <p>My journey in the tech world began with a profound interest in how technology shapes our lives. Over the years, I've honed my skills in programming languages such as Java and Python, and have delved deep into the realms of machine learning and artificial intelligence. My passion for solving complex problems has led me to develop numerous projects that not only challenge my abilities but also contribute to meaningful advancements in the field.</p>
-                    <p>At Tecosys, I work on developing and deploying machine learning models for recommendation systems, utilizing cutting-edge tools like TensorFlow, PyTorch, and Transformers. My role also involves integrating federated learning setups to enhance model performance across distributed environments. I am particularly proud of my work with CRF-based recommendation models and the implementation of text extraction systems using Tesseract-OCR.</p>
-                    <p>Apart from my professional engagements, I am constantly seeking to expand my knowledge and stay updated with the latest trends in AI/ML. I enjoy collaborating with like-minded individuals and believe that teamwork and continuous learning are key to success in this ever-evolving industry.</p>
-                </div>
-                <div class="col-6 col-12-medium imp-medium">
-                    <span class="image fit"><img src="personal images/WhatsApp Image 2024-07-28 at 19.11.36_1caa39b9.jpg" alt="Parayush Swami" /></span>
+        <!-- One -->
+        <section id="one" class="main style1">
+            <div class="container">
+                <div class="row gtr-150">
+                    <div class="col-6 col-12-medium">
+                        <header class="major">
+                            <h2>About Me</h2>
+                        </header>
+                        <p>Innovative and results-driven Computer Science student with expertise in Java, machine learning, and problem-solving. Eager to leverage technical skills and hands-on experience in a challenging role to drive technological advancements. Currently working as an AI/ML engineer at Tecosys.</p>
+                        <p>My journey in the tech world began with a profound interest in how technology shapes our lives. Over the years, I've honed my skills in programming languages such as Java and Python, and have delved deep into the realms of machine learning and artificial intelligence. My passion for solving complex problems has led me to develop numerous projects that not only challenge my abilities but also contribute to meaningful advancements in the field.</p>
+                        <p>At Tecosys, I work on developing and deploying machine learning models for recommendation systems, utilizing cutting-edge tools like TensorFlow, PyTorch, and Transformers. My role also involves integrating federated learning setups to enhance model performance across distributed environments. I am particularly proud of my work with CRF-based recommendation models and the implementation of text extraction systems using Tesseract-OCR.</p>
+                        <p>Apart from my professional engagements, I am constantly seeking to expand my knowledge and stay updated with the latest trends in AI/ML. I enjoy collaborating with like-minded individuals and believe that teamwork and continuous learning are key to success in this ever-evolving industry.</p>
+                    </div>
+                    <div class="col-6 col-12-medium imp-medium">
+                        <span class="image fit"><img src="personal images\WhatsApp Image 2024-07-28 at 19.11.36_1caa39b9.jpg" alt="Parayush Swami" /></span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills & Expertise -->
-    <section id="two" class="main style2">
-        <div class="container">
-            <div class="row gtr-150">
-                <div class="col-6 col-12-medium">
-                    <ul class="major-icons">
-                        <li><span class="icon solid style1 major fa-code"></span></li>
-                        <li><span class="icon solid style2 major fa-bolt"></span></li>
-                        <li><span class="icon solid style3 major fa-camera-retro"></span></li>
-                        <li><span class="icon solid style4 major fa-cog"></span></li>
-                        <li><span class="icon solid style5 major fa-desktop"></span></li>
-                        <li><span class="icon solid style6 major fa-calendar"></span></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-12-medium">
-                    <header class="major">
-                        <h2>Skills & Expertise</h2>
-                    </header>
-                    <p>My expertise spans across various domains in AI/ML, including:</p>
-                    <ul>
-                        <li>Programming: Java, Python, TensorFlow, Keras</li>
-                        <li>AI/ML: Machine Learning, Deep Learning, Generative AI</li>
-                        <li>Cybersecurity: Ethical Hacking, Incident Response</li>
-                        <li>Tools: AWS, Docker, Git, JIRA</li>
-                        <li>Soft Skills: Problem-Solving, Team Collaboration, Agile Methodologies</li>
-                    </ul>
-                    <p>Certifications:</p>
-                    <ul>
-                        <li>Data Science 101</li>
-                        <li>Mastercard - Cybersecurity Job Simulation</li>
-                        <li>JPMorgan Chase & Co. - Agile Job Simulation</li>
-                        <li>Introduction to Generative AI</li>
-                        <li>Accenture North America - Data Analytics and Visualization Job Simulation</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Professional Experience -->
-    <section id="three" class="main style1 special">
-        <div class="container">
-            <header class="major">
-                <h2>Professional Experience</h2>
-            </header>
-            <div class="row gtr-150">
-                <div class="col-6 col-12-medium">
-                    <h3>Tecosys - AI/ML Engineer</h3>
-                    <p>Duration: July 2024 – Present</p>
-                    <p>Website: <a href="https://tecogroup.in" target="_blank">Tecosys</a></p>
-                    <ul>
-                        <li><strong>Developed advanced machine learning models</strong> to power recommendation systems using TensorFlow, PyTorch, and Transformers, resulting in a 30% improvement in recommendation accuracy.</li>
-                        <li><strong>Led the integration of FedProx for federated learning</strong> across distributed environments, enhancing model performance and enabling personalized experiences for users across various platforms.</li>
-                        <li><strong>Implemented CRF-based models</strong> integrated with FedProx, significantly enhancing the personalization of recommendations by adapting to user behavior in real-time.</li>
-                        <li><strong>Utilized Tesseract-OCR</strong> for efficient text extraction from images, improving data input processes for text-based recommendation systems and reducing manual processing time by 40%.</li>
-                    </ul>
-                </div>
-                <div class="col-6 col-12-medium">
-                    <h3>Headstarter - Fellow</h3>
-                    <p>Duration: July 2024 – Present</p>
-                    <ul>
-                        <li>Conducted research on Neural Collaborative Filtering (NCF) and Autoencoders for Collaborative Filtering, contributing to the advancement of recommendation systems.</li>
-                        <li>Explored and integrated Graph Neural Networks (GNNs) into recommendation systems, enhancing their performance and scalability.</li>
-                        <li>Evaluated models using advanced metrics like Mean Average Precision (MAP) and Normalized Discounted Cumulative Gain (NDCG), ensuring high-quality recommendations.</li>
-                    </ul>
+        <!-- Two -->
+        <section id="two" class="main style2">
+            <div class="container">
+                <div class="row gtr-150">
+                    <div class="col-6 col-12-medium">
+                        <ul class="major-icons">
+                            <li><span class="icon solid style1 major fa-code"></span></li>
+                            <li><span class="icon solid style2 major fa-bolt"></span></li>
+                            <li><span class="icon solid style3 major fa-camera-retro"></span></li>
+                            <li><span class="icon solid style4 major fa-cog"></span></li>
+                            <li><span class="icon solid style5 major fa-desktop"></span></li>
+                            <li><span class="icon solid style6 major fa-calendar"></span></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-12-medium">
+                        <header class="major">
+                            <h2>Skills & Expertise</h2>
+                        </header>
+                        <p>My expertise spans across various domains in AI/ML, including:</p>
+                        <ul>
+                            <li>Programming: Java, Python, TensorFlow, Keras</li>
+                            <li>AI/ML: Machine Learning, Deep Learning, Generative AI</li>
+                            <li>Cybersecurity: Ethical Hacking, Incident Response</li>
+                            <li>Tools: AWS, Docker, Git, JIRA</li>
+                            <li>Soft Skills: Problem-Solving, Team Collaboration, Agile Methodologies</li>
+                        </ul>
+                        <p>Certifications:</p>
+                        <ul>
+                            <li>Data Science 101</li>
+                            <li>Mastercard - Cybersecurity Job Simulation</li>
+                            <li>JPMorgan Chase & Co. - Agile Job Simulation</li>
+                            <li>Introduction to Generative AI</li>
+                            <li>Accenture North America - Data Analytics and Visualization Job Simulation</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects -->
-    <section id="four" class="main style2 special">
-        <div class="container">
-            <header class="major">
-                <h2>Projects</h2>
-            </header>
-            <div class="row">
-                <div class="col-6 col-12-medium">
-                    <h3>Stock Price Prediction Model</h3>
-                    <p>A comprehensive stock price prediction model using machine learning. Implemented various models including Ridge Regression, ARIMA, and technical indicators to optimize predictions.</p>
-                    <ul>
-                        <li><strong>Technologies:</strong> Python, Keras, yfinance, Tkinter, TradingView</li>
-                        <li><strong>GitHub Repository:</strong> <a href="https://github.com/anonymous2905/Stock-Price-Prediction-Model" target="_blank">Stock Price Prediction Model</a></li>
-                        <li><strong>Features:</strong> Data preprocessing, model training, technical indicators, hyperparameter tuning.</li>
-                    </ul>
-                </div>
-                <div class="col-6 col-12-medium">
-                    <h3>Face Recognition System</h3>
-                    <p>A face recognition system using Dlib and EfficientNet. Implemented functionalities for user registration, database management, and real-time recognition.</p>
-                    <ul>
-                        <li><strong>Technologies:</strong> Python, SQLite, Tkinter, Dlib, EfficientNet</li>
-                    </ul>
+        <!-- Three -->
+        <section id="three" class="main style1 special">
+            <div class="container">
+                <header class="major">
+                    <h2>Professional Experience</h2>
+                </header>
+                <div class="row gtr-150">
+                    <div class="col-6 col-12-medium">
+                        <h3>Tecosys - AI/ML Engineer</h3>
+                        <p>Duration: July 2024 – Present</p>
+                        <p>As an AI/ML Engineer at Tecosys, I am responsible for developing and deploying advanced machine learning models for recommendation systems. I work with cutting-edge tools such as TensorFlow, PyTorch, and Transformers to create scalable solutions. A significant aspect of my role involves integrating federated learning setups through FedProx to enhance model performance in distributed environments. Additionally, I have led initiatives to develop CRF-based recommendation models and implement text extraction systems using Tesseract-OCR, which significantly improves the accuracy and efficiency of our recommendations.</p>
+                    </div>
+                    <div class="col-6 col-12-medium">
+                        <h3>Headstarter - Fellow</h3>
+                        <p>Duration: July 2024 – Present</p>
+                        <ul>
+                            <li>Conducted research on Neural Collaborative Filtering (NCF) and Autoencoders for Collaborative Filtering, contributing to the advancement of recommendation systems.</li>
+                            <li>Explored and integrated Graph Neural Networks (GNNs) into recommendation systems, enhancing their performance and scalability.</li>
+                            <li>Evaluated models using advanced metrics like Mean Average Precision (MAP) and Normalized Discounted Cumulative Gain (NDCG), ensuring high-quality recommendations.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Connect with Me -->
-    <section id="five" class="main style3">
-        <div class="container">
-            <header class="major">
-                <h2>Connect with Me</h2>
-            </header>
-            <div class="social-buttons">
-                <a href="https://github.com/ParayushSwami" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/parayush-swami/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:parayushswami@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.instagram.com/parayush.swami/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://tecogroup.in" target="_blank"><i class="fas fa-building"></i> Tecosys</a>
+        <!-- Four -->
+        <section id="four" class="main style2 special">
+            <div class="container">
+                <header class="major">
+                    <h2>Projects</h2>
+                </header>
+                <div class="row gtr-150">
+                    <div class="col-4 col-12-medium">
+                        <span class="image fit"></span>
+                        <h3>Food Recognition and Calorie Estimation</h3>
+                        <p>Created a TensorFlow model using ResNet50 to classify food images and estimate calorie content.</p>
+                        <ul class="actions special">
+                            <li><a href="https://github.com/anonymous2905/PRODIGY_ML_05/blob/main/Food_Calorie%20Estimation.ipynb" class="button">View Project</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-12-medium">
+                        <span class="image fit"></span>
+                        <h3>Facial Recognition System</h3>
+                        <p>Developed a face recognition system using Dlib and EfficientNet, integrated with a Tkinter interface for real-time face recognition.</p>
+                        <ul class="actions special">
+                            <li><a href="https://github.com/anonymous2905/Face_Recognition_Tkinter" class="button">View Project</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-12-medium">
+                        <span class="image fit"></span>
+                        <h3>Stock Price Prediction</h3>
+                        <p>Built a stock price prediction model using Ridge Regression and various technical indicators to enhance prediction accuracy.</p>
+                        <ul class="actions special">
+                            <li><a href="https://github.com/anonymous2905/Stock-Price-Prediction-Model" class="button">View Project</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="container">
-            <ul class="icons">
-                <li><a href="https://github.com/ParayushSwami" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="https://www.linkedin.com/in/parayush-swami/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="mailto:parayushswami@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                <li><a href="https://www.instagram.com/parayush.swami/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="https://tecogroup.in" class="icon solid fa-building"><span class="label">Tecosys</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Parayush Swami</li>
-                <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </div>
-    </footer>
+        <!-- Five -->
+        <section id="five" class="main style1">
+            <div class="container">
+                <header class="major">
+                    <h2>Contact</h2>
+                </header>
+                <ul class="contact">
+                    <li class="icon solid fa-envelope"><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                    <li class="icon solid fa-linkedin"><a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a></li>
+                    <li class="icon solid fa-github"><a href="https://github.com/yourprofile">GitHub</a></li>
+                    <li class="icon solid fa-instagram"><a href="https://www.instagram.com/yourprofile">Instagram</a></li>
+                    <li class="icon solid fa-briefcase"><a href="https://www.tecosys.com">Tecosys</a></li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <p>&copy; 2024 Parayush Swami. All rights reserved.</p>
+            </div>
+        </footer>
 
-</body>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
