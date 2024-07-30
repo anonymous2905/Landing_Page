@@ -8,27 +8,13 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
-        /* Dynamic background animation */
+        /* Remove dynamic background animation */
         #header .inner {
             position: relative;
             z-index: 1;
         }
         #header .inner .name-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-size: cover;
-            animation: change-background 30s infinite;
-        }
-        @keyframes change-background {
-            0%, 100% { background: url('assets/css/images/andy-holmes-LUpDjlJv4_c-unsplash.jpg') no-repeat center center; }
-            20% { background: url('assets/css/images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg') no-repeat center center; }
-            40% { background: url('assets/css/images/jeremy-thomas-4dpAqfTbvKA-unsplash.jpg') no-repeat center center; }
-            60% { background: url('assets/css/images/juskteez-vu-TIrXot28Znc-unsplash.jpg') no-repeat center center; }
-            80% { background: url('assets/css/images/nasa-rTZW4f02zY8-unsplash.jpg') no-repeat center center; }
+            display: none; /* Hide the background animation */
         }
         /* Custom styles for sections */
         .main.style1 {
@@ -51,6 +37,18 @@
         .actions .button {
             margin: 0.5em;
         }
+        .social-buttons {
+            margin-top: 1em;
+        }
+        .social-buttons a {
+            margin: 0.5em;
+            text-decoration: none;
+            color: #333;
+        }
+        .social-buttons i {
+            font-size: 1.5em;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -58,7 +56,6 @@
     <!-- Header -->
     <section id="header">
         <div class="inner">
-            <div class="name-background"></div>
             <span class="icon solid major fa-cloud"></span>
             <h1>Hi, I'm <strong>Parayush Swami</strong></h1>
             <p>AI/ML Engineer at Tecosys and Fellow at Headstarter</p>
@@ -167,36 +164,36 @@
             <div class="row">
                 <div class="col-6 col-12-medium">
                     <h3>Stock Price Prediction Model</h3>
-                    <p>Developed a machine learning model to predict stock prices using Ridge Regression. The model achieved optimal accuracy across different stock categories, minimizing prediction errors and utilizing technical indicators for better forecasts. <a href="https://github.com/anonymous2905/Stock-Price-Prediction-Model">Project Repository</a></p>
+                    <p>A comprehensive stock price prediction model using machine learning. Implemented various models including Ridge Regression, ARIMA, and technical indicators to optimize predictions.</p>
+                    <ul>
+                        <li><strong>Technologies:</strong> Python, Keras, yfinance, Tkinter, TradingView</li>
+                        <li><strong>GitHub Repository:</strong> <a href="https://github.com/anonymous2905/Stock-Price-Prediction-Model" target="_blank">Stock Price Prediction Model</a></li>
+                        <li><strong>Features:</strong> Data preprocessing, model training, technical indicators, hyperparameter tuning.</li>
+                    </ul>
                 </div>
                 <div class="col-6 col-12-medium">
                     <h3>Face Recognition System</h3>
-                    <p>Implemented a face recognition system using Dlib and EfficientNet, focusing on functionalities like user registration, database management, and real-time recognition. Optimized for efficiency on Raspberry Pi 4 and integrated with Tkinter for a user-friendly interface.</p>
+                    <p>A face recognition system using Dlib and EfficientNet. Implemented functionalities for user registration, database management, and real-time recognition.</p>
+                    <ul>
+                        <li><strong>Technologies:</strong> Python, SQLite, Tkinter, Dlib, EfficientNet</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="five" class="main style3 special">
+    <!-- Connect with Me -->
+    <section id="five" class="main style3">
         <div class="container">
             <header class="major">
-                <h2>Contact</h2>
+                <h2>Connect with Me</h2>
             </header>
-            <div class="row">
-                <div class="col-6 col-12-medium">
-                    <ul class="contact">
-                        <li class="icon solid fa-envelope"><a href="mailto:parayushswami@example.com">parayushswami@example.com</a></li>
-                        <li class="icon solid fa-phone">(123) 456-7890</li>
-                        <li class="icon solid fa-map-marker-alt">123 Street Name, City, Country</li>
-                    </ul>
-                </div>
-                <div class="col-6 col-12-medium">
-                    <ul class="actions">
-                        <li><a href="https://github.com/anonymous2905" class="button">GitHub</a></li>
-                        <li><a href="https://linkedin.com/in/parayushswami" class="button">LinkedIn</a></li>
-                    </ul>
-                </div>
+            <div class="social-buttons">
+                <a href="https://github.com/ParayushSwami" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/parayush-swami/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:parayushswami@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/parayush.swami/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://tecogroup.in" target="_blank"><i class="fas fa-building"></i> Tecosys</a>
             </div>
         </div>
     </section>
@@ -204,22 +201,28 @@
     <!-- Footer -->
     <footer id="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <ul class="icons">
-                        <li><a href="https://github.com/anonymous2905" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                        <li><a href="https://linkedin.com/in/parayushswami" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                    </ul>
-                    <p>&copy; 2024 Parayush Swami. All rights reserved.</p>
-                </div>
-            </div>
+            <ul class="icons">
+                <li><a href="https://github.com/ParayushSwami" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="https://www.linkedin.com/in/parayush-swami/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="mailto:parayushswami@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="https://www.instagram.com/parayush.swami/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://tecogroup.in" class="icon solid fa-building"><span class="label">Tecosys</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Parayush Swami</li>
+                <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+            </ul>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
 </body>
 </html>
